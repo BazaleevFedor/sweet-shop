@@ -1,0 +1,10 @@
+.main {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    bottom: 100px;
+}

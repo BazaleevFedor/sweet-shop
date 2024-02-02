@@ -1,0 +1,34 @@
+.main {
+    margin-left: 15px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: flex;
+
+    height: 30px;
+}
+
+.main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    cursor: pointer;
+}
+
+.main a .active {
+    background: #ECECEC;
+    border-radius: 30px;
+    cursor: auto;
+}
+
+.main a:hover {
+    background: #ECECEC;
+    color: #2D2D2D;
+    border-radius: 30px;
+}
