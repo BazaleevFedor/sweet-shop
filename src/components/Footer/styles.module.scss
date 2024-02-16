@@ -1,0 +1,48 @@
+.main {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    position: relative;
+
+    height: 70px;
+
+    .contacts {
+        display: grid;
+        gap: 12px;
+        margin: 8px;
+
+        font-family: var(--font-main);
+        color: var(--font-color);
+        font-weight: 300;
+        font-size: 15px;
+
+        &__item {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            gap: 8px;
+        }
+    }
+
+    .line {
+        position: absolute;
+        bottom: 70px;
+
+        line {
+            stroke: var(--line-color);
+        }
+    }
+
+    .catLine {
+        position: absolute;
+        bottom: 30px;
+        right: 119px;
+
+        path,
+        line {
+            stroke: var(--line-color);
+        }
+
+        ellipse {
+            fill: var(--line-color);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Comfortaa;
+  src: url('/fonts/Comfortaa-Medium.ttf');
+}
+
+@font-face {
+  font-family: IslandMoments;
+  src: url('/fonts/IslandMoments.ttf');
+}
+
+:root {
+  --font-main: Comfortaa, sans-serif;
+  --font-logo: IslandMoments, sans-serif;
+}
+
+:root[data-theme="light"] {
+  --background-color: #FFEFF6;
+  --background-active-btn-header: #FFEFF6;
+  --background-active-btn-category: #FFEFF6;
+
+  --border-active-btn: #131313;
+
+  --line-color: #131313;
+
+  --font-color: #131313;
+  --font-color-logo-header: #131313;
+  --font-color-contrast: #131313;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #131313;
+  --background-active-btn-header: #ECECEC;
+  --background-active-btn-category: rgba(164, 164, 164, 0.17);
+
+  --border-active-btn: #131313;
+
+  --line-color: #969696;
+
+  --font-color: #FFFFFF;
+  --font-color-logo-header: #E7E7E7;
+  --font-color-contrast: #2D2D2D;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+
+  background: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

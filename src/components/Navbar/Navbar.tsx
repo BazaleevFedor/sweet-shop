@@ -1,25 +1,16 @@
-'use client'
-
-import styles from './styles.module.css'
-import {useState} from "react";
-import {NavbarItem} from "@/components/NavbarItem/NavbarItem";
+import styles from './styles.module.scss'
+import { configuration } from "@/configuration";
+import {usePathname} from "next/navigation";
+import Link from "next/link";
 
 export const Navbar = () => {
-    const [state, setState] = useState(0);
-
-    const navbarTitle = [
-        {text: 'Главная', href: '/'},
-        {text: 'Дизайн', href: '#'},
-        {text: 'Начинки', href: '#'},
-        {text: 'Контакты', href: '#'},
-        {text: 'Корзина', href: '/cart'},
-    ];
+    const pathname = usePathname()
 
     return (
-        <div className={styles.main}>
-            {navbarTitle.map((title, index) => (
-                <NavbarItem key={index} isActive={false} text={title.text} href={title.href}></NavbarItem>
-            ))}
+        <div className={ styles.main }>
+            { configuration.navbarTitles.map((title, index) => (
+                <Link key={index} className={ `${styles.main} ${pathname === title.href ? styles.active : ''}` } href={ title.href }>{ title.text }</Link>
+            )) }
         </div>
     );
 }
