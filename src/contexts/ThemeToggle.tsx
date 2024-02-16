@@ -17,7 +17,7 @@ const getTheme = () => {
     return configuration.themes[0];  // dark
 }
 
-const getNextTheme = (curTheme) => {
+const getNextTheme = (curTheme: string) => {
     for (let i = 0; i < configuration.themes.length; i++) {
         if (curTheme === configuration.themes[i].name && i + 1 < configuration.themes.length) return configuration.themes[i + 1];
     }

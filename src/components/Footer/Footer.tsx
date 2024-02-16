@@ -10,9 +10,9 @@ export default function Footer() {
         <div className={ styles.main }>
 
             <div className={ styles.contacts }>
-                { configuration.contacts.map((item) => {
+                { configuration.contacts.map((item, index) => {
                     return (
-                        <Link href={ item.link } target="_blank">
+                        <Link href={ item.link } target="_blank" key={index}>
                             <label className={ styles.contacts__item }>
                                 <Image src={ item.img } alt={ item.title } width={23} height={20}/>
                                 <span>{ item.title }</span>
