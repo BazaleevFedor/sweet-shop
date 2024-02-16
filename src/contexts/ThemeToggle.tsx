@@ -6,13 +6,17 @@ import {configuration} from "@/configuration";
 import {useEffect, useState} from "react";
 
 const getTheme = () => {
-    const theme = `${window?.localStorage?.getItem('theme')}`;
-    for (let i = 0; i < configuration.themes.length; i++) {
-        if (theme === configuration.themes[i].name) return configuration.themes[i];
+    if (typeof localStorage !== 'undefined') {
+        const theme = `${localStorage?.getItem('theme')}`;
+        for (let i = 0; i < configuration.themes.length; i++) {
+            if (theme === configuration.themes[i].name) return configuration.themes[i];
+        }
     }
 
-    const userMedia = window.matchMedia('(prefers-color-scheme: light)')
-    if (userMedia.matches) return configuration.themes[1];  // light
+    if (typeof window !== 'undefined') {
+        const userMedia = window.matchMedia('(prefers-color-scheme: light)')
+        if (userMedia.matches) return configuration.themes[1];  // light
+    }
 
     return configuration.themes[0];  // dark
 }
