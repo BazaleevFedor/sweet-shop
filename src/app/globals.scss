@@ -8,6 +8,15 @@
   src: url('/fonts/IslandMoments.ttf');
 }
 
+$breakpoint-xxxs: 320px;
+$breakpoint-xxs:  460px;
+$breakpoint-xs:   576px;
+$breakpoint-sm:   768px;
+$breakpoint-md: 900px;
+$breakpoint-lg:  1200px;
+$breakpoint-xl:  1360px;
+$breakpoint-xxl: 1600px;
+
 :root {
   --font-main: Comfortaa, sans-serif;
   --font-logo: IslandMoments, sans-serif;
@@ -15,30 +24,26 @@
 
 :root[data-theme="light"] {
   --background-color: #FFEFF6;
-  --background-active-btn-header: #FFEFF6;
-  --background-active-btn-category: #FFEFF6;
+  --background-btn-active: #FFEFF6;
+  --border-btn-active: #131313;
 
-  --border-active-btn: #131313;
-
-  --line-color: #131313;
-
-  --font-color: #131313;
-  --font-color-logo-header: #131313;
-  --font-color-contrast: #131313;
+  --main-color: #131313;
+  --main-color-contrast: #131313;
+  --dull-color: rgba(219, 219, 219, 0.8);
+  --bright-color: #FCFCFC;
+  --input-color: rgba(255, 255, 255, 0.3);
 }
 
 :root[data-theme="dark"] {
   --background-color: #131313;
-  --background-active-btn-header: #ECECEC;
-  --background-active-btn-category: rgba(164, 164, 164, 0.17);
+  --background-btn-active: #ECECEC;
+  --border-btn-active: #131313;
 
-  --border-active-btn: #131313;
-
-  --line-color: #969696;
-
-  --font-color: #FFFFFF;
-  --font-color-logo-header: #E7E7E7;
-  --font-color-contrast: #2D2D2D;
+  --main-color: #E7E7E7;
+  --main-color-contrast: #131313;
+  --dull-color: rgba(219, 219, 219, 0.8);
+  --bright-color: #FCFCFC;
+  --input-color: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -64,4 +69,30 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.svgTheme {
+  color: var(--main-color);
+
+  path,
+  line {
+    fill: var(--main-color);
+  }
+
+  ellipse,
+  circle {
+    fill: var(--main-color);
+  }
+}
+
+.svgThemeLine {
+  path,
+  line {
+    stroke: var(--main-color);
+  }
+
+  ellipse,
+  circle {
+    fill: var(--main-color);
+  }
 }

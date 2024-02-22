@@ -7,11 +7,10 @@
 
     .contacts {
         display: grid;
-        gap: 12px;
+        gap: 8px;
         margin: 8px;
 
         font-family: var(--font-main);
-        color: var(--font-color);
         font-weight: 300;
         font-size: 15px;
 
@@ -19,30 +18,23 @@
             display: grid;
             grid-template-columns: max-content max-content;
             gap: 8px;
+
+            height: 22px;
+
+            span {
+                margin: auto;
+            }
         }
     }
 
     .line {
         position: absolute;
         bottom: 70px;
-
-        line {
-            stroke: var(--line-color);
-        }
     }
 
     .catLine {
         position: absolute;
         bottom: 30px;
         right: 119px;
-
-        path,
-        line {
-            stroke: var(--line-color);
-        }
-
-        ellipse {
-            fill: var(--line-color);
-        }
     }
 }
