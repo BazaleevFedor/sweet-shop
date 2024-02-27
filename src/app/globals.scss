@@ -24,6 +24,7 @@ $breakpoint-xxl: 1600px;
 
 :root[data-theme="light"] {
   --background-color: #FFEFF6;
+  --background-menu: #F5AAC9;
   --background-btn-active: #FFEFF6;
   --border-btn-active: #131313;
 
@@ -36,6 +37,7 @@ $breakpoint-xxl: 1600px;
 
 :root[data-theme="dark"] {
   --background-color: #131313;
+  --background-menu: #F5AAC9;
   --background-btn-active: #ECECEC;
   --border-btn-active: #131313;
 
