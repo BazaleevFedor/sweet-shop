@@ -22,10 +22,24 @@ export default function Footer() {
                 }) }
             </div>
 
-            <svg className={ classnames(styles.line, 'svgThemeLine') } width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={ classnames(styles.line, styles.line__two, 'svgThemeLine') } width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter1_f_295_1354)">
                     <line x1="0%" y1="2" x2="calc(100% - 300px)" y2="2" stroke="#C7C7C7" strokeWidth="2"/>
                     <line x1="calc(100% - 206px)" y1="2" x2="100%" y2="2" stroke="#C7C7C7" strokeWidth="2"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_295_1354" x="0" y="0" width="100%" height="4.71996"
+                            filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_295_1354"/>
+                    </filter>
+                </defs>
+            </svg>
+
+            <svg className={ classnames(styles.line, styles.line__one, 'svgThemeLine') } width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter1_f_295_1354)">
+                    <line x1="0%" y1="2" x2="100%" y2="2" stroke="#C7C7C7" strokeWidth="2"/>
                 </g>
                 <defs>
                     <filter id="filter0_f_295_1354" x="0" y="0" width="100%" height="4.71996"

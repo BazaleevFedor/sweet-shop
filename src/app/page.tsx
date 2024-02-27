@@ -1,5 +1,7 @@
-import styles from "./page.module.scss";
+import styles from "./styles.module.scss";
 
 export default function Home() {
-  return <div>Главная епт</div>;
+  return (
+      <div className={ styles.main }>Главная епт</div>
+  );
 }

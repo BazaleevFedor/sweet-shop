@@ -1,67 +1,54 @@
 .navbarContainer {
-    display: grid;
+  display: grid;
 
-    .navbar {
-        margin-top: auto;
-        margin-bottom: auto;
-        display: flex;
-        height: 30px;
+  .navbar {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    height: 30px;
 
-        @media (max-width: $breakpoint-md) {
-            display: none;
-        }
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--main-color);
 
-        a {
-            font-family: var(--font-main);
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            color: var(--main-color);
-
-            padding: 0 10px 0 10px;
-            margin: 0 5px 0 5px;
-
-            cursor: pointer;
-
-            &.active {
-                background: var(--background-btn-active);
-                color: var(--main-color-contrast);
-                border-radius: 30px;
-                border: 1px solid var(--main-color);
-
-                cursor: auto;
-            }
-
-            &:hover {
-                background: var(--background-btn-active);
-                color: var(--main-color-contrast);
-                border-radius: 30px;
-            }
-        }
+    @media (max-width: 930px) {
+      display: none;
     }
 
-    .menu {
-        display: none;
-        height: 100%;
-        left: 0;
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      margin: 0 5px;
+      cursor: pointer;
 
-        svg {
-            margin: auto 0 auto 0;
-        }
+      &.active {
+        background: var(--background-btn-active);
+        color: var(--main-color-contrast);
+        border-radius: 30px;
+        border: 1px solid var(--main-color);
+        cursor: auto;
+      }
 
-        path {
-            stroke: var(--line-color);
-        }
-
-        @media (max-width: var(--breakpoint-md)) {
-            display: flex;
-        }
+      &:hover {
+        background: var(--background-btn-active);
+        color: var(--main-color-contrast);
+        border-radius: 30px;
+      }
     }
+  }
+
+  .menu {
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: auto 0;
+
+    @media (max-width: 930px) {
+      display: flex;
+    }
+  }
 }

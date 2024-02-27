@@ -1,25 +1,61 @@
-.main {
+.header {
   display: grid;
-  grid-template-columns: 1fr max-content max-content max-content;
+  grid-template-columns: 1fr max-content max-content;
   position: relative;
   padding: 0 30px 0 40px;
   height: 70px;
 
-  .instagramIcon {
-    margin: auto 12px auto 36px;
+  @media (max-width: 930px) {
+    grid-template-columns: max-content 1fr max-content;
+    padding: 0 22px;
   }
 
   .instagramLink {
-    margin: auto 36px auto 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 12px;
 
     font-family: var(--font-main);
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+
+    margin: auto 32px auto 12px;
+
+    @media (max-width: 930px) {
+      display: none;
+    }
+
+    .instagramText,
+    .instagramIcon {
+      margin: auto 0;
+    }
   }
 
   .line {
     position: absolute;
     bottom: 0;
+  }
+
+  .phone {
+    display: none;
+    grid-template-columns: max-content max-content;
+    gap: 10px;
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: var(--main-color);
+    margin: auto;
+    padding: 0 12px;
+
+    @media (max-width: 930px) {
+      display: grid;
+    }
+
+    .phoneIcon,
+    .phoneText {
+      margin: auto 0;
+    }
   }
 }

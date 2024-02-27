@@ -1,40 +1,85 @@
 .main {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  position: relative;
+  height: 70px;
+
+  @media (max-width: 400px) {
+    height: 56px;
+  }
+
+  .contacts {
     display: grid;
-    grid-template-rows: max-content 1fr;
-    position: relative;
+    gap: 8px;
+    margin: 8px;
 
-    height: 70px;
+    @media (max-width: 400px) {
+      gap: 4px;
+      margin: 4px;
+    }
 
-    .contacts {
-        display: grid;
-        gap: 8px;
-        margin: 8px;
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 15px;
 
-        font-family: var(--font-main);
-        font-weight: 300;
-        font-size: 15px;
+    &__item {
+      display: grid;
+      grid-template-columns: max-content max-content;
+      gap: 8px;
+      cursor: pointer;
+      height: 22px;
 
-        &__item {
-            display: grid;
-            grid-template-columns: max-content max-content;
-            gap: 8px;
+      @media (max-width: 400px) {
+        width: 18px;
+      }
 
-            height: 22px;
-
-            span {
-                margin: auto;
-            }
+      svg {
+        @media (max-width: 400px) {
+          height: 18px;
+          width: 22px;
         }
+      }
+
+      span {
+        margin: auto;
+
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .line {
+    position: absolute;
+    bottom: 70px;
+
+    @media (max-width: 400px) {
+      bottom: 56px;
     }
 
-    .line {
-        position: absolute;
-        bottom: 70px;
+    &__two {
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
 
-    .catLine {
-        position: absolute;
-        bottom: 30px;
-        right: 119px;
+    &__one {
+      display: none;
+
+      @media (max-width: 700px) {
+        display: grid;
+      }
     }
+  }
+
+  .catLine {
+    position: absolute;
+    bottom: 30px;
+    right: 119px;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
 }
