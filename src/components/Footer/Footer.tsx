@@ -22,7 +22,7 @@ export default function Footer() {
                 }) }
             </div>
 
-            <svg className={ classnames(styles.line, styles.line__two, 'svgThemeLine') } width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={ classnames(styles.line, styles.line__two, 'svgThemeLine') } data-tag='blur' width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter1_f_295_1354)">
                     <line x1="0%" y1="2" x2="calc(100% - 300px)" y2="2" stroke="#C7C7C7" strokeWidth="2"/>
                     <line x1="calc(100% - 206px)" y1="2" x2="100%" y2="2" stroke="#C7C7C7" strokeWidth="2"/>
@@ -37,7 +37,7 @@ export default function Footer() {
                 </defs>
             </svg>
 
-            <svg className={ classnames(styles.line, styles.line__one, 'svgThemeLine') } width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={ classnames(styles.line, styles.line__one, 'svgThemeLine') } data-tag='blur' width="100%" height="5" viewBox="0 0 100% 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter1_f_295_1354)">
                     <line x1="0%" y1="2" x2="100%" y2="2" stroke="#C7C7C7" strokeWidth="2"/>
                 </g>
@@ -51,7 +51,7 @@ export default function Footer() {
                 </defs>
             </svg>
 
-            <svg className={ classnames(styles.catLine, 'svgThemeLine') } width="202" height="153" viewBox="0 0 202 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={ classnames(styles.catLine, 'svgThemeLine') } data-tag='blur' width="202" height="153" viewBox="0 0 202 153" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_294_1350)">
                     <path d="M19.0701 110.54L21.5696 102.54C22.9217 96.5628 23.6774 93.0093 24.0697 85.04L24.5696 67.04L25.0605 57.2229C25.0665 57.102 25.0939 56.9814 25.1468 56.8725C26.205 54.6968 28.1086 55.5362 32.1417 58.1564C35.738 60.8599 37.4778 62.845 39.6421 65.6564C42.6494 69.3543 45.0575 75.2424 47.7512 84.8877C47.9186 85.4871 48.589 85.7932 49.1534 85.531C57.4704 81.6673 60.5596 81.2861 62.3122 85.3808C62.4785 85.7693 62.8517 86.04 63.2742 86.04L84.4967 86.04C84.5453 86.04 84.5941 86.0365 84.6421 86.0291C91.112 85.0353 95.5375 78.3625 100.036 66.6299C100.059 66.5708 100.076 66.5085 100.087 66.4462C100.829 62.2932 101.67 58.7861 103.498 52.7743C103.545 52.6215 103.63 52.4781 103.742 52.3644C106.825 49.2419 107.666 49.5091 109.57 52.54C113.11 58.8623 114.846 62.9678 116.57 70.54C117.971 76.6939 117.887 86.4277 117.699 89.8235C117.664 90.4563 117.507 91.6313 117.441 92.2616L115.57 110.04"
                           stroke="#C7C7C7" strokeWidth="2"/>

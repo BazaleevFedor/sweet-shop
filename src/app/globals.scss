@@ -66,6 +66,12 @@ body {
   grid-template-rows: max-content 1fr max-content;
 
   background: var(--background-color);
+
+  &.blur {
+    [data-tag='blur'] {
+      filter: blur(4px);
+    }
+  }
 }
 
 a {

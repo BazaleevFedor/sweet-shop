@@ -39,7 +39,7 @@ export default function ThemeToggle() {
     }, [ theme ]);
 
     return (
-        <button className={styles.themeButton} onClick={ () => setTheme(getNextTheme(theme.name)) } title={ getNextTheme(theme.name).title }>
+        <button className={styles.themeButton} data-tag='blur' onClick={ () => setTheme(getNextTheme(theme.name)) } title={ getNextTheme(theme.name).title }>
             <svg className={classnames(styles.themeImg, 'svgThemeLine')} width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.9034 2.08099C36.3387 6.3741 40.2959 14.8585 38.8067 23.3141C37.3165 31.7738 30.6928 38.3975 22.2331 39.8877C13.7775 41.3769 5.29311 37.4197 1 29.9844"
                       stroke="#E7E7E7" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>

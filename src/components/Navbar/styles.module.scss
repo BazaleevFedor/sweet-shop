@@ -49,14 +49,74 @@
         position: absolute;
         left: 0;
         top: 0;
-        height: 100vh;
-        width: 70%;
         padding: 85px 65px 70px 15px;
         z-index: 1;
 
+        height: 100vh;
+        width: 100vw;
+
         background-image: url('../../../public/img/menuBackground.svg');
         background-repeat: no-repeat;
-        background-size: auto 100vh;
+        background-size: contain;
+
+        grid-auto-rows: 1fr 1fr;
+
+        a {
+          display: grid;
+          cursor: pointer;
+          width: 150px;
+          padding: 4px 0;
+          margin-bottom: 16px;
+          border-radius: 30px;
+          border: 1px solid var(--main-color);
+
+          p {
+            margin: 0 auto;
+          }
+
+          &.active {
+            background: var(--background-btn-active);
+            color: var(--main-color-contrast);
+            cursor: auto;
+          }
+
+          &:hover {
+            background: var(--background-btn-active);
+            color: var(--main-color-contrast);
+          }
+        }
+      }
+    }
+
+    .catPaws {
+      width: 45px;
+      height: 145px;
+      margin-left: 20px;
+
+      position: relative;
+
+      &__first {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+
+      &__second {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      &__third {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &__fourth {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
       }
     }
   }
