@@ -6,11 +6,13 @@
   font-weight: 400;
   line-height: normal;
   color: var(--main-color);
+  position: relative;
 
   .navbar {
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
+    gap: 12px;
     height: 30px;
 
     @media (max-width: 930px) {
@@ -20,22 +22,19 @@
     a {
       display: flex;
       align-items: center;
-      padding: 0 10px;
-      margin: 0 5px;
+      padding: 4px 14px;
       cursor: pointer;
+      border: 1px solid var(--background-color);
 
       &.active {
-        background: var(--background-btn-active);
-        color: var(--main-color-contrast);
         border-radius: 30px;
         border: 1px solid var(--main-color);
         cursor: auto;
       }
 
       &:hover {
-        background: var(--background-btn-active);
-        color: var(--main-color-contrast);
         border-radius: 30px;
+        border: 1px solid var(--main-color);
       }
     }
   }
@@ -44,46 +43,59 @@
     display: none;
 
     @media (max-width: 930px) {
-      &.active {
+      display: grid;
+      position: absolute;
+      left: -100vw;
+      transition: all 0.4s linear;
+      top: 0;
+      padding: 85px 65px 70px 15px;
+      z-index: 1;
+
+      height: 100vh;
+      width: auto;
+
+      grid-auto-rows: 1fr 1fr;
+
+      a {
         display: grid;
+        cursor: pointer;
+        width: 150px;
+        padding: 4px 0;
+        margin-bottom: 16px;
+        border-radius: 30px;
+        border: 1px solid var(--main-color);
+
+        p {
+          margin: 0 auto;
+        }
+
+        &.active {
+          background: var(--background-btn-active);
+          color: var(--main-color-contrast);
+          cursor: auto;
+        }
+
+        &:hover {
+          background: var(--background-btn-active);
+          color: var(--main-color-contrast);
+        }
+      }
+
+      .navbarMobilBackground {
         position: absolute;
-        left: 0;
-        top: 0;
-        padding: 85px 65px 70px 15px;
-        z-index: 1;
-
         height: 100vh;
-        width: 100vw;
+        width: auto;
+        z-index: -1;
 
-        background-image: url('../../../public/img/menuBackground.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
+        left: -100vw;
+        transition: all 0.4s linear;
+      }
 
-        grid-auto-rows: 1fr 1fr;
+      &.active {
+        left: -22px;
 
-        a {
-          display: grid;
-          cursor: pointer;
-          width: 150px;
-          padding: 4px 0;
-          margin-bottom: 16px;
-          border-radius: 30px;
-          border: 1px solid var(--main-color);
-
-          p {
-            margin: 0 auto;
-          }
-
-          &.active {
-            background: var(--background-btn-active);
-            color: var(--main-color-contrast);
-            cursor: auto;
-          }
-
-          &:hover {
-            background: var(--background-btn-active);
-            color: var(--main-color-contrast);
-          }
+        .navbarMobilBackground {
+          left: 0;
         }
       }
     }

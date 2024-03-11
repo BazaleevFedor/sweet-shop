@@ -37,7 +37,7 @@ $breakpoint-xxl: 1600px;
 
 :root[data-theme="dark"] {
   --background-color: #131313;
-  --background-menu: #F5AAC9;
+  --background-menu: #555555;
   --background-btn-active: #ECECEC;
   --border-btn-active: #131313;
 
@@ -77,6 +77,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.svgThemeMenu {
+  path {
+    fill: var(--background-menu);
+    stroke: var(--main-color);
+  }
 }
 
 .svgTheme {

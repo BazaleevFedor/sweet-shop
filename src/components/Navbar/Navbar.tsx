@@ -77,6 +77,29 @@ export const Navbar = () => {
                               fill="black"/>
                     </svg>
                 </div>
+
+                <svg className={ classnames(styles.navbarMobilBackground, 'svgThemeMenu') } width="234" height="667" viewBox="0 0 234 667" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_330_3742)">
+                        <path d="M0 3.00001C0 1.34316 1.34315 0 3 0H176.848C178.315 0 179.566 1.06064 179.807 2.50754L188.31 53.6028C188.376 53.9974 188.52 54.3749 188.733 54.713L229.133 118.643C229.674 119.5 229.746 120.571 229.325 121.493L200.953 183.593C200.622 184.318 200.592 185.144 200.871 185.89L229.491 262.452C229.812 263.312 229.722 264.272 229.246 265.057L180.233 345.936C179.707 346.803 179.656 347.878 180.096 348.792L199.996 390.106C200.281 390.698 200.364 391.368 200.231 392.012L179.539 492.611C179.441 493.088 179.461 493.581 179.596 494.048L216.033 620.136C216.307 621.083 216.098 622.104 215.474 622.867L180.29 665.899C179.72 666.596 178.868 667 177.968 667H3C1.34314 667 0 665.657 0 664V3.00001Z"
+                              fill="#F5AAC9"/>
+                        <path d="M1 3.00001C1 1.89544 1.89544 1 3 1H176.848C177.826 1 178.66 1.70709 178.821 2.67169L187.324 53.767C187.411 54.2931 187.603 54.7963 187.888 55.2472L188.733 54.713L187.888 55.2472L228.287 119.177C228.648 119.748 228.696 120.463 228.416 121.077L200.043 183.177C199.602 184.143 199.563 185.245 199.935 186.24L228.554 262.802C228.769 263.375 228.709 264.015 228.391 264.539L179.378 345.417C178.677 346.574 178.608 348.007 179.195 349.226L199.095 390.54C199.285 390.935 199.34 391.381 199.252 391.811L178.56 492.41C178.429 493.045 178.455 493.703 178.635 494.326L215.073 620.413C215.255 621.045 215.116 621.726 214.7 622.234L179.516 665.266C179.136 665.731 178.568 666 177.968 666H3C1.89543 666 1 665.105 1 664V3.00001Z"
+                              stroke="#131313" strokeWidth="2"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_330_3742" x="-4" y="0" width="237.681" height="675" filterUnits="userSpaceOnUse"
+                                colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                           result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_330_3742"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_330_3742" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
             </div>
 
             <button className={ styles.menu } onClick={ () => {
